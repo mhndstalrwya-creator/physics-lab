@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="laws">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroLab | المختبر الإلكتروني الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html"><span class="brand-mark">ϟ</span><span>Electro<span>Lab</span><small data-i18n="brandSub">المختبر الإلكتروني الذكي</small></span></a>
+      <nav><a class="nav-link" href="home.html"><b>⌂</b><span data-i18n="home">home</span></a>
+<a class="nav-link" href="lab.html"><b>⌁</b><span data-i18n="lab">lab</span></a>
+<a class="nav-link" href="analyzer.html"><b>⌕</b><span data-i18n="analyzer">analyzer</span></a>
+<a class="nav-link" href="experiments.html"><b>⚗</b><span data-i18n="experiments">experiments</span></a>
+<a class="nav-link active" href="laws.html"><b>∑</b><span data-i18n="laws">laws</span></a>
+<a class="nav-link" href="quiz.html"><b>☷</b><span data-i18n="quiz">quiz</span></a>
+<a class="nav-link" href="profile.html"><b>◉</b><span data-i18n="profile">profile</span></a></nav>
+      <div class="side-bottom"><div class="online-dot"></div><span data-i18n="ready">المختبر جاهز للتجربة</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div><div class="eyebrow" data-i18n="workspace">مساحة التعلم والتجربة</div><div class="page-heading" id="pageHeading" data-i18n="laws">laws</div></div>
+        <div class="top-actions"><button class="lang-btn" id="langToggle">EN</button><div class="avatar" id="avatar">E</div></div>
+      </header>
+      <section class="page active">
+        <div class="section-title"><div><h2 data-i18n="lawsTitle">مكتبة القوانين الإلكترونية</h2><p class="muted" data-i18n="lawsIntro">اكتشف أكثر من 25 قانوناً إلكترونياً وجرّب حساب القيم بنفسك.</p></div></div>
+        <div class="law-toolbar"><div class="law-search-wrap"><span>⌕</span><input id="lawSearch" type="search" placeholder="ابحث عن قانون أو رمز..." aria-label="Search laws"></div><div class="law-count" id="lawCount">28 قانوناً</div></div>
+        <div class="law-library" id="lawLibrary"></div>
+        <div class="panel law-workbench" id="lawWorkbench">
+          <div class="law-workbench-head"><div><span class="tag" data-i18n="interactiveCalc">INTERACTIVE CALCULATOR</span><h3 id="selectedLawTitle">قانون أوم</h3><p class="muted" id="selectedLawDesc">أدخل جميع القيم المعروفة واترك قيمة واحدة فارغة لحسابها.</p></div><div class="law-equation" id="selectedLawEquation">V = I × R</div></div>
+          <div id="lawInputs" class="law-input-grid"></div>
+          <div class="law-actions"><button class="primary" id="solveLaw" data-i18n="solveLaw">احسب القيمة الناقصة</button><button class="outline" id="resetLaw" data-i18n="resetLaw">مسح القيم</button></div>
+          <div class="calc-result" id="lawResult" aria-live="polite">اترك متغيراً واحداً فارغاً ثم اضغط احسب.</div>
+          <p class="muted small law-tip" data-i18n="lawTip">ملاحظة: استخدم الوحدات الموضحة بجانب كل متغير، ولا تترك أكثر من خانة فارغة.</p>
+        </div>
+      </section>
+      <footer><span>© 2026 eng.ayloool</span><span data-i18n="footer">مختبر تعليمي تجريبي للإلكترونيات</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body></html>

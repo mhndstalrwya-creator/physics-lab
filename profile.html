@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="profile">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroLab | المختبر الإلكتروني الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html"><span class="brand-mark">ϟ</span><span>Electro<span>Lab</span><small data-i18n="brandSub">المختبر الإلكتروني الذكي</small></span></a>
+      <nav><a class="nav-link" href="home.html"><b>⌂</b><span data-i18n="home">home</span></a>
+<a class="nav-link" href="lab.html"><b>⌁</b><span data-i18n="lab">lab</span></a>
+<a class="nav-link" href="analyzer.html"><b>⌕</b><span data-i18n="analyzer">analyzer</span></a>
+<a class="nav-link" href="experiments.html"><b>⚗</b><span data-i18n="experiments">experiments</span></a>
+<a class="nav-link" href="laws.html"><b>∑</b><span data-i18n="laws">laws</span></a>
+<a class="nav-link" href="quiz.html"><b>☷</b><span data-i18n="quiz">quiz</span></a>
+<a class="nav-link active" href="profile.html"><b>◉</b><span data-i18n="profile">profile</span></a></nav>
+      <div class="side-bottom"><div class="online-dot"></div><span data-i18n="ready">المختبر جاهز للتجربة</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div><div class="eyebrow" data-i18n="workspace">مساحة التعلم والتجربة</div><div class="page-heading" id="pageHeading" data-i18n="profile">profile</div></div>
+        <div class="top-actions"><button class="lang-btn" id="langToggle">EN</button><div class="avatar" id="avatar">E</div></div>
+      </header>
+      <section class="page active">
+        <div class="section-title"><div><h2 data-i18n="profileTitle">ملفي الشخصي</h2><p class="muted" data-i18n="profileIntro">مساحتك لمتابعة رحلة التعلم.</p></div></div>
+        <div class="profile-header panel"><div class="profile-avatar" id="profileAvatar">E</div><div><h2 id="profileName">متعلم ElectroLab</h2><p class="muted" id="profileEmail">student@example.com</p></div><span class="level-tag" data-i18n="beginner">مبتدئ</span></div>
+        <div class="stats-grid"><div class="stat-card"><span data-i18n="completedExperiments">التجارب المكتملة</span><strong id="completedCount">0</strong></div><div class="stat-card"><span data-i18n="quizPoints">نقاط الاختبارات</span><strong id="profilePoints">0</strong></div><div class="stat-card"><span data-i18n="learningLevel">مستوى التعلم</span><strong>01</strong></div></div>
+        <div class="panel"><h3 data-i18n="yourJourney">رحلتك في المختبر</h3><p class="muted" data-i18n="profileProgress">ابدأ تجربة أو أكمل اختباراً لتظهر إنجازاتك هنا.</p><div class="progress"><span id="profileProgress"></span></div><button class="outline logout-btn" id="logout" data-i18n="logout">تسجيل الخروج</button></div>
+      </section>
+      <footer><span>© 2026 eng.ayloool</span><span data-i18n="footer">مختبر تعليمي تجريبي للإلكترونيات</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body></html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="quiz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroLab | المختبر الإلكتروني الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html"><span class="brand-mark">ϟ</span><span>Electro<span>Lab</span><small data-i18n="brandSub">المختبر الإلكتروني الذكي</small></span></a>
+      <nav><a class="nav-link" href="home.html"><b>⌂</b><span data-i18n="home">home</span></a>
+<a class="nav-link" href="lab.html"><b>⌁</b><span data-i18n="lab">lab</span></a>
+<a class="nav-link" href="analyzer.html"><b>⌕</b><span data-i18n="analyzer">analyzer</span></a>
+<a class="nav-link" href="experiments.html"><b>⚗</b><span data-i18n="experiments">experiments</span></a>
+<a class="nav-link" href="laws.html"><b>∑</b><span data-i18n="laws">laws</span></a>
+<a class="nav-link active" href="quiz.html"><b>☷</b><span data-i18n="quiz">quiz</span></a>
+<a class="nav-link" href="profile.html"><b>◉</b><span data-i18n="profile">profile</span></a></nav>
+      <div class="side-bottom"><div class="online-dot"></div><span data-i18n="ready">المختبر جاهز للتجربة</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div><div class="eyebrow" data-i18n="workspace">مساحة التعلم والتجربة</div><div class="page-heading" id="pageHeading" data-i18n="quiz">quiz</div></div>
+        <div class="top-actions"><button class="lang-btn" id="langToggle">EN</button><div class="avatar" id="avatar">E</div></div>
+      </header>
+      <section class="page active">
+        <div class="section-title"><div><h2 data-i18n="quizTitle">اختبر معلوماتك</h2><p class="muted" data-i18n="quizIntro">في كل جولة 5 أسئلة مختلفة يتم اختيارها عشوائياً من بنك أسئلة متنوع.</p></div></div>
+        <div class="panel quiz-panel"><div class="quiz-top"><span class="tag" id="questionCount">QUESTION 1 / 5</span><span class="score-chip"><span data-i18n="score">النقاط</span>: <b id="quizScore">0</b></span></div><div class="progress"><span id="quizProgress"></span></div><h2 id="questionText"></h2><div id="answerOptions" class="answer-options"></div><div class="quiz-bottom"><span id="quizFeedback" class="muted"></span><button class="primary" id="nextQuestion" disabled data-i18n="next">التالي</button></div></div>
+      </section>
+      <footer><span>© 2026 eng.ayloool</span><span data-i18n="footer">مختبر تعليمي تجريبي للإلكترونيات</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body></html>

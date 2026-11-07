@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="lab">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroLab | المختبر الإلكتروني الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html"><span class="brand-mark">ϟ</span><span>Electro<span>Lab</span><small data-i18n="brandSub">المختبر الإلكتروني الذكي</small></span></a>
+      <nav><a class="nav-link" href="home.html"><b>⌂</b><span data-i18n="home">home</span></a>
+<a class="nav-link active" href="lab.html"><b>⌁</b><span data-i18n="lab">lab</span></a>
+<a class="nav-link" href="analyzer.html"><b>⌕</b><span data-i18n="analyzer">analyzer</span></a>
+<a class="nav-link" href="experiments.html"><b>⚗</b><span data-i18n="experiments">experiments</span></a>
+<a class="nav-link" href="laws.html"><b>∑</b><span data-i18n="laws">laws</span></a>
+<a class="nav-link" href="quiz.html"><b>☷</b><span data-i18n="quiz">quiz</span></a>
+<a class="nav-link" href="profile.html"><b>◉</b><span data-i18n="profile">profile</span></a></nav>
+      <div class="side-bottom"><div class="online-dot"></div><span data-i18n="ready">المختبر جاهز للتجربة</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div><div class="eyebrow" data-i18n="workspace">مساحة التعلم والتجربة</div><div class="page-heading" id="pageHeading" data-i18n="lab">lab</div></div>
+        <div class="top-actions"><button class="lang-btn" id="langToggle">EN</button><div class="avatar" id="avatar">E</div></div>
+      </header>
+      <section class="page active">
+        <div class="section-title"><div><h2 data-i18n="labTitle">مساحة تركيب الدوائر</h2><p class="muted" data-i18n="labIntro">اختر المكونات ثم أضفها إلى لوحة التجارب. هذه محاكاة تعليمية مبسطة.</p></div><button class="outline" id="clearBoard" data-i18n="clear">مسح اللوحة</button></div>
+        <div class="lab-layout"><div class="panel component-panel"><h3 data-i18n="components">المكونات</h3><p class="muted small" data-i18n="dragHint">اضغط على المكوّن لإضافته إلى اللوحة</p><div class="component-list">
+          <button class="component" data-part="Battery"><span class="part-art battery">＋ −</span><span data-i18n="battery">بطارية</span></button>
+          <button class="component" data-part="Resistor"><span class="part-art resistor">〰</span><span data-i18n="resistor">مقاومة</span></button>
+          <button class="component" data-part="LED"><span class="part-art led">◉</span><span>LED</span></button>
+          <button class="component" data-part="Switch"><span class="part-art switch">⌁</span><span data-i18n="switch">مفتاح</span></button>
+          <button class="component" data-part="Capacitor"><span class="part-art capacitor">‖</span><span data-i18n="capacitor">مكثف</span></button>
+          <button class="component" data-part="Wire"><span class="part-art wire">／</span><span data-i18n="wire">سلك توصيل</span></button>
+        </div></div>
+        <div class="panel board-panel"><div class="board-head"><h3 data-i18n="breadboard">لوحة التجارب</h3><span class="live-label"><i></i><span data-i18n="readyState">جاهزة</span></span></div><div class="breadboard" id="breadboard"><div class="rail"></div><div class="board-holes"></div><div class="board-empty" id="boardEmpty" data-i18n="boardEmpty">أضف المكونات من القائمة لبدء بناء دائرتك</div><div class="placed-parts" id="placedParts"></div></div><div class="board-actions"><button class="primary" id="runCircuit" data-i18n="run">تشغيل الدائرة</button><span id="circuitResult" class="result-text" data-i18n="circuitTip">أضف بطارية وLED ومقاومة ثم شغّل الدائرة.</span></div></div></div>
+      </section>
+      <footer><span>© 2026 eng.ayloool</span><span data-i18n="footer">مختبر تعليمي تجريبي للإلكترونيات</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body></html>

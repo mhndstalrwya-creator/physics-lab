@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-page="analyzer">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroLab | المختبر الإلكتروني الذكي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html"><span class="brand-mark">ϟ</span><span>Electro<span>Lab</span><small data-i18n="brandSub">المختبر الإلكتروني الذكي</small></span></a>
+      <nav><a class="nav-link" href="home.html"><b>⌂</b><span data-i18n="home">home</span></a>
+<a class="nav-link" href="lab.html"><b>⌁</b><span data-i18n="lab">lab</span></a>
+<a class="nav-link active" href="analyzer.html"><b>⌕</b><span data-i18n="analyzer">analyzer</span></a>
+<a class="nav-link" href="experiments.html"><b>⚗</b><span data-i18n="experiments">experiments</span></a>
+<a class="nav-link" href="laws.html"><b>∑</b><span data-i18n="laws">laws</span></a>
+<a class="nav-link" href="quiz.html"><b>☷</b><span data-i18n="quiz">quiz</span></a>
+<a class="nav-link" href="profile.html"><b>◉</b><span data-i18n="profile">profile</span></a></nav>
+      <div class="side-bottom"><div class="online-dot"></div><span data-i18n="ready">المختبر جاهز للتجربة</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu">☰</button>
+        <div><div class="eyebrow" data-i18n="workspace">مساحة التعلم والتجربة</div><div class="page-heading" id="pageHeading" data-i18n="analyzer">analyzer</div></div>
+        <div class="top-actions"><button class="lang-btn" id="langToggle">EN</button><div class="avatar" id="avatar">E</div></div>
+      </header>
+      <section class="page active">
+        <div class="section-title"><div><h2 data-i18n="analyzerTitle">حلّل صورتك الإلكترونية</h2><p class="muted" data-i18n="analyzerIntro">ارفع صورة تحتوي على مكونات أو دائرة إلكترونية.</p></div></div>
+        <div class="analyzer-layout"><div class="panel upload-panel"><div class="upload-zone" id="uploadZone"><div class="upload-icon">⇧</div><h3 data-i18n="uploadTitle">ارفع صورة إلكترونية</h3><p class="muted" data-i18n="uploadHint">اسحب الصورة هنا أو اخترها من جهازك</p><input type="file" id="imageInput" accept="image/*"><button class="outline" onclick="document.getElementById('imageInput').click()" data-i18n="chooseImage">اختيار صورة</button></div><img id="imagePreview" class="image-preview" alt="Preview" hidden><button id="analyzeBtn" class="primary full" disabled data-i18n="analyze">تحليل الصورة</button></div><div class="panel analysis-panel"><h3 data-i18n="analysisResult">نتيجة التحليل</h3><div id="analysisOutput" class="empty-state"><div class="empty-icon">⌕</div><p data-i18n="analysisEmpty">ستظهر هنا المكونات التي تم التعرف عليها.</p></div><p class="notice" data-i18n="analyzerLimit">ملاحظة: هذه نسخة أولية تجريبية؛ التعرف هنا يعتمد على أسماء المكونات الشائعة، وليس نموذج ذكاء اصطناعي مدرّباً. لا ترفع صوراً شخصية أو حساسة.</p></div></div>
+      </section>
+      <footer><span>© 2026 eng.ayloool</span><span data-i18n="footer">مختبر تعليمي تجريبي للإلكترونيات</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body></html>
