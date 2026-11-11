@@ -100,3 +100,12 @@ python3 -m http.server 8000
 للمساهمة، أنشئ فرعًا جديدًا، أجرِ التعديل، ثم افتح Pull Request مع وصف واضح للتغيير. يرجى الحفاظ على دعم اللغتين العربية والإنجليزية واختبار الصفحات الأساسية قبل إرسال التعديل.
 
 © eng.ayloool
+
+## New interactive simulation pages
+This update adds four standalone pages linked from the sidebar and dashboard:
+- `circuit-builder.html`: add circuit components and run a basic learning check.
+- `conductors.html`: test conductor/insulator material examples.
+- `current-flow.html`: change voltage and resistance sliders and see Ohm's law results update live.
+- `meters.html`: simulate voltmeter, ammeter, and ohmmeter readings.
+
+The simulations are educational front-end models, not a certified electrical circuit solver. Use low-voltage conceptual examples only; do not connect real hardware based on this demo.
